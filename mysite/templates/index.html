@@ -2,14 +2,113 @@
 <html>
 <head lang="en">
     <meta charset="UTF-8">
-    <title>{% block title %}{% endblock %}</title>
+    <!--<title>{% block title %}{% endblock %}</title>-->
+    <title>Электромонтажные работы</title>
 </head>
+<style>
+    div {
+  display: block;
+}
+  #logo {
+    text-transform: uppercase;
+  }
+  .container .column, .container .columns {
+    float: left;
+    display: inline;
+    margin-left: 1.041666666666667%;
+    margin-right: 1.041666666666667%;
+  }
+    #header {
+  text-align: center;
+}
+    .container {
+  position: relative;
+  width: 100%;
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 0;
+}
+.container .sixteen.columns {
+  width: 97.91666666666667%;
+}
+    body {
+  margin: 0px;
+  padding: 0px;
+  background: #fff;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 12pt;
+  font-weight: 300;
+  color: #363636;
+}
+    #menu-wrapper {
+  background: #314D5D;
+    position: center;
+}
+    div, ul, li {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+    #menu {
+  /* height: 100px; */
+}
+#menu, ul {
+  margin: 0;
+  padding: 0px 0px 0px 0px;
+  list-style: none;
+  line-height: normal;
+  text-align: center;
+}
+    ul {
+  list-style: none outside;
+}
+    ul, ol {
+  margin-bottom: 20px;
+}
+ol, ul {
+  list-style: none;
+}
+    #menu li {
+  display: inline-block;
+  margin: 0;
+}
+li {
+  line-height: 18px;
+  margin-bottom: 12px;
+    display: list-item;
+  text-align: -webkit-match-parent;
+}
+
+</style>
 <body>
-    <h1>My helpful timestamp site</h1>
-    {% block content %}{% endblock %}
-    {% block footer %}
-    <hr>
-    <p>Thanks for visiting my site.</p>
-    {% endblock %}
+    <div id="head_wrapper" class="'wrapper">
+        <div id="header" class="container">
+            <div id="logo" class="sixteen columns">
+                <h1>
+                    <a href="http://kip-minsk.by/">KIP-MINSK.BY</a>
+                </h1>
+            </div>
+        </div>
+    </div>
+    <div id="menu-wrapper" class="wrapper">
+        <div id="menu" class="container">
+            <nav class="sixteen columns">
+                <ul>
+                    <li class="index current active"><a href="http://kip-minsk.by/" title="ЭЛЕКТРОМОНТАЖНЫЕ РАБОТЫ">ЭЛЕКТРОМОНТАЖНЫЕ РАБОТЫ</a></li>
+                    <li class="obsluzhivanie-sistem-teplovogo-ucheta-i-regulirovaniya"><a href="http://kip-minsk.by/obsluzhivanie-sistem-teplovogo-ucheta-i-regulirovaniya/" title="ОБСЛУЖИВАНИЕ СИСТЕМ ТЕПЛОВОГО УЧЕТА И РЕГУЛИРОВАНИЯ">ОБСЛУЖИВАНИЕ СИСТЕМ ТЕПЛОВОГО УЧЕТА И РЕГУЛИРОВАНИЯ</a></li>
+                    <li class="contact"><a href="http://kip-minsk.by/contact/" title="хватит, сучка, сиськи мять, когда прибор пора менять--в руку мобильник свой возьми, пока не поздно, мне звони!!!">КОНТАКТЫ</a></li><li></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <!--<h1>My helpful timestamp site</h1>-->
+    <!--{% block content %}{% endblock %}-->
+    <!--{% block footer %}-->
+    <!--<hr>-->
+    <!--<p>Thanks for visiting my site.</p>-->
+    <!--{% endblock %}-->
 </body>
 </html>

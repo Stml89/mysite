@@ -1,6 +1,7 @@
 __author__ = 'stml'
 from django.shortcuts import render_to_response
 from django.http import HttpResponse
+# from django.template.loader import get_template
 
 def hello(request):
-    return render_to_response('pages/index.html')
+    return render_to_response('index.html')

@@ -1,109 +1,135 @@
 <!DOCTYPE html>
+{% load staticfiles %}
 <html>
 <head lang="en">
-    <meta charset="UTF-8">
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <!--<title>{% block title %}{% endblock %}</title>-->
-    <title>Электромонтажные работы</title>
+    <title>КипИА Минск</title>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}"/>
+	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Oswald:400,300" type="text/css">
+
+	<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
 </head>
 <style>
-    div {
-  display: block;
-}
-  #logo {
-    text-transform: uppercase;
-  }
-  .container .column, .container .columns {
-    float: left;
-    display: inline;
-    margin-left: 1.041666666666667%;
-    margin-right: 1.041666666666667%;
-  }
-    #header {
-  text-align: center;
-}
-    .container {
-  position: relative;
-  width: 100%;
-  max-width: 1080px;
-  margin: 0 auto;
-  padding: 0;
-}
-.container .sixteen.columns {
-  width: 97.91666666666667%;
-}
-    body {
-  margin: 0px;
-  padding: 0px;
-  background: #fff;
-  font-family: 'Open Sans', sans-serif;
-  font-size: 12pt;
-  font-weight: 300;
-  color: #363636;
-}
-    #menu-wrapper {
-  background: #314D5D;
-    position: center;
-}
-    div, ul, li {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-}
-    #menu {
-  /* height: 100px; */
-}
-#menu, ul {
-  margin: 0;
-  padding: 0px 0px 0px 0px;
-  list-style: none;
-  line-height: normal;
-  text-align: center;
-}
-    ul {
-  list-style: none outside;
-}
-    ul, ol {
-  margin-bottom: 20px;
-}
-ol, ul {
-  list-style: none;
-}
-    #menu li {
-  display: inline-block;
-  margin: 0;
-}
-li {
-  line-height: 18px;
-  margin-bottom: 12px;
-    display: list-item;
-  text-align: -webkit-match-parent;
-}
-
 </style>
 <body>
-    <div id="head_wrapper" class="'wrapper">
-        <div id="header" class="container">
-            <div id="logo" class="sixteen columns">
-                <h1>
-                    <a href="http://kip-minsk.by/">KIP-MINSK.BY</a>
-                </h1>
-            </div>
-        </div>
-    </div>
-    <div id="menu-wrapper" class="wrapper">
-        <div id="menu" class="container">
-            <nav class="sixteen columns">
-                <ul>
-                    <li class="index current active"><a href="http://kip-minsk.by/" title="ЭЛЕКТРОМОНТАЖНЫЕ РАБОТЫ">ЭЛЕКТРОМОНТАЖНЫЕ РАБОТЫ</a></li>
-                    <li class="obsluzhivanie-sistem-teplovogo-ucheta-i-regulirovaniya"><a href="http://kip-minsk.by/obsluzhivanie-sistem-teplovogo-ucheta-i-regulirovaniya/" title="ОБСЛУЖИВАНИЕ СИСТЕМ ТЕПЛОВОГО УЧЕТА И РЕГУЛИРОВАНИЯ">ОБСЛУЖИВАНИЕ СИСТЕМ ТЕПЛОВОГО УЧЕТА И РЕГУЛИРОВАНИЯ</a></li>
-                    <li class="contact"><a href="http://kip-minsk.by/contact/" title="хватит, сучка, сиськи мять, когда прибор пора менять--в руку мобильник свой возьми, пока не поздно, мне звони!!!">КОНТАКТЫ</a></li><li></li>
+    <!--<div id="head_wrapper" class="'wrapper">-->
+        <!--<div id="header" class="container">-->
+            <!--<div id="logo" class="sixteen columns">-->
+                <!--<h1>-->
+                    <!--<a href="/">KIP-MINSK.BY</a>-->
+                <!--</h1>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
+    <!--<div id="menu-wrapper" class="wrapper">-->
+        <!--<div id="menu" class="container">-->
+            <!--<nav class="sixteen columns">-->
+                <!--<ul>-->
+                    <!--<li class="index current active"><a href="/electrical_work/" title="Электромонтажные работы">Электромонтажные работы</a></li>-->
+                    <!--<li class="obsluzhivanie-sistem-teplovogo-ucheta-i-regulirovaniya"><a href="/service/" title="Обслуживание систем теплового учета и регулирования">Обслуживание систем теплового учета и регулирования</a></li>-->
+                    <!--<li class="contact"><a href="/contact/" title="Наши контакты">Наши контакты</a></li><li></li>-->
+                <!--</ul>-->
+            <!--</nav>-->
+        <!--</div>-->
+    <!--</div>-->
+
+    <div id="wrapper">
+		<header>
+            <a href="/"><img src="{% static 'pic/banner.gif' %}" alt="kip-logo"></a>
+            <!--<form name="search" action="#" method="get">-->
+	            <!--<input type="text" name="q" placeholder="Search">-->
+                    <!--<button type="submit">GO</button>-->
+            <!--</form>-->
+        </header>
+		<nav>
+            <ul class="top-menu">
+                <li class="home">Главная</li>
+                <li><a href="/services/">Обслуживание систем теплового учета и регулирования</a></li>
+                <li><a href="/electrical/">Электромонтажные работы</a></li>
+                <li><a href="/contact/">Наши контакты</a></li>
+	        </ul>
+        </nav>
+		<!--<div id="heading">-->
+            <!--<h1>ABOUT US</h1>-->
+        <!--</div>-->
+		<aside>
+            <nav>
+                <ul class="aside-menu">
+                    <li class="active">LOREM IPSUM</li>
+                    <li><a href="/donec/">DONEC TINCIDUNT LAOREET</a></li>
+                    <li><a href="/vestibulum/">VESTIBULUM ELIT</a></li>
+                    <li><a href="/etiam/">ETIAM PHARETRA</a></li>
+                    <li><a href="/phasellus/">PHASELLUS PLACERAT</a></li>
+                    <li><a href="/cras/">CRAS ET NISI VITAE ODIO</a></li>
                 </ul>
             </nav>
+        </aside>
+		<section>
+            <blockquote>
+                <p>“ХВАТИТ, СУЧКА, СИСЬКИ МЯТЬ, КОГДА ПРИБОР ПОРА МЕНЯТЬ--В РУКУ МОБИЛЬНИК СВОЙ ВОЗЬМИ, ПОКА НЕ ПОЗДНО, МНЕ ЗВОНИ!!!”</p>
+                <cite>Borya-man, Minsk Belarus</cite>
+            </blockquote>
+            <p>
+                Одним из инструментов, позволяющих повысить уровень безопасности в Linux, является подсистема аудита. C её помощью можно получить подробную информацию обо всех системных событиях.
+                Она не обеспечивает никакой дополнительной защиты, но предоставляет подробную информацию о нарушениях безопасности, на основании которой можно принять конкретные меры. Особенности работы с подсистемой аудита мы рассмотрим в этой статье.
+            </p>
+            <p>
+                I've been working on a django project for a few weeks now, just playing around so that I can get the hang of it. I am a little bit confused. I have a template now called "home.html". I was wondering if there is anyway for me to have another template called "profile.html" to be set as a link on the home.html template? I have a button that when clicked, should take me directly to the profile.html page, but as I was doing research on this topic, I was getting mixed answers. Some people stated to create a view and have that load the html using javascript, while others stated that just writing the path to the 2nd page template in tags would be easier.
+                What is the most correct way of getting this done?
+                I looked at this link: Rendering another template from a button click in Django to try to get a better understanding, as it was the one other question that was closest to what I was asking, but it confused me even more as the django lingo is somewhat confusing for me to understand as a beginner.
+                Thank you in advance for any help you can provide.
+            </p>
+            <p>
+                С точки зрения психологических потребностей, FoMO возникает в результате низкого уровня удовлетворенности психологических потребностей. Согласно Теории Самодетерминации, необходимость поддерживать связь с другими людьми — базовая потребность, которая влияет на психологическое здоровье человека.
+                В свете этой теории, FoMO можно рассматривать как саморегулируемое состояние, влияние которого прямо пропорционально тому, насколько удовлетворены ситуативные или постоянные психологические потребности человека.
+                Исследования показывают, что FoMO особенно часто проявляется среди тех людей, кто не ощущает себя нужным и значимым.
+                Критическое влияние на распространение и усиление этого состояние оказывает развитие технологии (смартфонов, планшетов, компьютеров), и, особенно, социальных сервисов. Причем, в случае с профессиональными сервисами (LinkedIn), FoMO влияет на удовлетворенность, связанную с профессиональной деятельностью.
+                Иногда это достигает критических значений и приводит к последствиям вплоть до хронической интернет-зависимости. Это всё известно многим, и довольно хорошо изучено. Однако, мы сделали вот какое неожиданное открытие.
+                Оказывается, это явление было открыто не в психологии или когнитивистике, а в маркетинге. Термин был введен в обиход маркетологом (специалист по бихевиоризму потребителей, стратегии конкуренции, инновации, маркетингу и брэндингу — цитата с оф. сайта) Доктором Дэном Хёрманом в 1996 году, но только в 2000-х вошел в наиболее активное употребление.
+                Таким образом, пока психологи пытаются решить эту проблему, не кто иной, как тот, кто обнаружил ее — извлекает выгоду из того, что обучает корпорации её эксплуатировать. Причем, судя по послужному списку, в котором значатся компании вроде Coca-Cola, IBM, Motorola — похоже, что бюджеты в войне за наше внимание, сравнимы с военными, простите за пафос.
+            </p>
+            <br><br>
+            <h2>Наша команда</h2>
+            <div class="team-row">
+                <figure>
+                    <img src="{% static 'pic/borya-man.jpg' %}" width="96" height="96" alt="">
+                    <figcaption>Borya<span> - team leader</span></figcaption>
+                </figure>
+            </div>
+        </section>
+	</div>
+	<footer>
+        <div id="footer">
+            <div id="sitemap">
+                <h3>Карта сайта:</h3>
+                <div>
+                    <a href="/">Главная страница</a>
+                    <a href="/contact/">Наши контакты</a>
+                </div>
+                <div>
+                    <a href="/electrical/">Электромонтажные работы</a>
+                    <a href="/services/">Обслуживание систем теплового учета и регулирования</a>
+                </div>
+            </div>
+            <div id="footer-logo">
+                <a href="/"><img src="" alt="Whitesquare logo"></a>
+                <p>Copyright © 2015 kip-minsk. A Stml creation</p>
+            </div>
         </div>
-    </div>
+    </footer>
+    <!--{% if service_page%}-->
+        <!--<div>service_page</div>-->
+    <!--{% elif contact_page %}-->
+        <!--<div>contact_page</div>-->
+    <!--{% elif electrical_work %}-->
+        <!--<div>electrical_page</div>-->
+    <!--{% else %}-->
+        <!--<div>home_page</div>-->
+    <!--{% endif %}-->
     <!--<h1>My helpful timestamp site</h1>-->
     <!--{% block content %}{% endblock %}-->
     <!--{% block footer %}-->

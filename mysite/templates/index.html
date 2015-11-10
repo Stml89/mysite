@@ -14,62 +14,24 @@
 	<![endif]-->
 </head>
 <body>
-    <!--<div id="head_wrapper" class="'wrapper">-->
-        <!--<div id="header" class="container">-->
-            <!--<div id="logo" class="sixteen columns">-->
-                <!--<h1>-->
-                    <!--<a href="/">KIP-MINSK.BY</a>-->
-                <!--</h1>-->
-            <!--</div>-->
-        <!--</div>-->
-    <!--</div>-->
-    <!--<div id="menu-wrapper" class="wrapper">-->
-        <!--<div id="menu" class="container">-->
-            <!--<nav class="sixteen columns">-->
-                <!--<ul>-->
-                    <!--<li class="index current active"><a href="/electrical_work/" title="Электромонтажные работы">Электромонтажные работы</a></li>-->
-                    <!--<li class="obsluzhivanie-sistem-teplovogo-ucheta-i-regulirovaniya"><a href="/service/" title="Обслуживание систем теплового учета и регулирования">Обслуживание систем теплового учета и регулирования</a></li>-->
-                    <!--<li class="contact"><a href="/contact/" title="Наши контакты">Наши контакты</a></li><li></li>-->
-                <!--</ul>-->
-            <!--</nav>-->
-        <!--</div>-->
-    <!--</div>-->
-
-    <div id="wrapper">
+    <div class="wrapper-head">
 		<header>
-            <a href="/"><img src="{% static 'pic/banner.gif' %}" alt="kip-logo"></a>
-            <!--<form name="search" action="#" method="get">-->
-	            <!--<input type="text" name="q" placeholder="Search">-->
-                    <!--<button type="submit">GO</button>-->
-            <!--</form>-->
+            <a href="/"><img src="{% static 'pic/banner.gif' %}" alt="kip-logo" width="100%"></a>
         </header>
-		<nav>
-            <ul class="top-menu">
-                <li class="home">Главная</li>
-                <li><a href="/services/">Обслуживание систем теплового учета и регулирования</a></li>
-                <li><a href="/electrical/">Электромонтажные работы</a></li>
-                <li><a href="/contact/">Наши контакты</a></li>
-	        </ul>
-        </nav>
-		<!--<div id="heading">-->
-            <!--<h1>ABOUT US</h1>-->
-        <!--</div>-->
-		<aside>
+        <div class="headerstat">
             <nav>
-                <ul class="aside-menu">
-                    <li class="active">LOREM IPSUM</li>
-                    <li><a href="/donec/">DONEC TINCIDUNT LAOREET</a></li>
-                    <li><a href="/vestibulum/">VESTIBULUM ELIT</a></li>
-                    <li><a href="/etiam/">ETIAM PHARETRA</a></li>
-                    <li><a href="/phasellus/">PHASELLUS PLACERAT</a></li>
-                    <li><a href="/cras/">CRAS ET NISI VITAE ODIO</a></li>
+                <ul class="top-menu">
+                    <li class="home">Главная</li>
+                    <li><a href="/services/">Обслуживание систем теплового учета и регулирования</a></li>
+                    <li><a href="/electrical/">Электромонтажные работы</a></li>
+                    <li><a href="/contact/">Наши контакты</a></li>
                 </ul>
             </nav>
-            <br>
-            <h2>Наш офис</h2>
-            <p><img src="images/sample.png" width="230" height="180" alt="Our offices"></p>
-        </aside>
+        </div>
+    </div>
+    <div id="wrapper">
 		<section>
+            <br>
             <blockquote>
                 <p>“ХВАТИТ, СУЧКА, СИСЬКИ МЯТЬ, КОГДА ПРИБОР ПОРА МЕНЯТЬ--В РУКУ МОБИЛЬНИК СВОЙ ВОЗЬМИ, ПОКА НЕ ПОЗДНО, МНЕ ЗВОНИ!!!”</p>
                 <cite>Borya-man, Minsk Belarus</cite>
@@ -98,7 +60,7 @@
             <div class="team-row">
                 <figure>
                     <img src="{% static 'pic/borya-man.jpg' %}" width="96" height="96" alt="">
-                    <figcaption>Borya<span> - team leader</span></figcaption>
+                    <figcaption>Borya<span> - leader</span></figcaption>
                 </figure>
             </div>
         </section>
@@ -117,8 +79,8 @@
                 </div>
             </div>
             <div id="footer-logo">
-                <a href="/"><img src="" alt="Whitesquare logo"></a>
-                <p>Copyright © 2015 kip-minsk. A Stml creation</p>
+                <a href="/"><img src="" alt="kip-minsk logo"></a>
+                <p>Copyright © 2015 kip-minsk.by</p>
             </div>
         </div>
     </footer>

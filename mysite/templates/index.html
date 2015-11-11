@@ -4,7 +4,7 @@
 <head lang="en">
     <meta http-equiv="Content-type" content="text/html; charset=utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
-    <title>{% block title %}{% endblock %}</title>
+    <!--<title>{% block title %}{% endblock %}</title>-->
     <link rel="stylesheet" href="{% static 'css/styles.css' %}"/>
 	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Oswald:400,300" type="text/css">
 
@@ -13,14 +13,26 @@
 	<![endif]-->
 </head>
 <body>
-    <div class="wrapper-head">
+    <script type="text/javascript">
+        $(window).bind('scroll', function() {
+           if ($(window).scrollTop() < 276) {
+              $('.top-menu').addClass('fixed');
+           }
+           else
+           {
+              $('.top-menu').removeClass('fixed');
+           }
+        });
+    </script>
+    <div id="wrapper">
 		<header>
             <a href="/"><img src="{% static 'pic/banner.gif' %}" alt="kip-logo" width="100%"></a>
         </header>
         <div class="headerstat">
             <nav>
                 <ul class="top-menu">
-                    <li class="home">Главная</li>
+                    <!--<li class="home">Главная</li>-->
+                    <li><a href="/">Главная</a></li>
                     <li><a href="/services/">Обслуживание систем теплового учета и регулирования</a></li>
                     <li><a href="/electrical/">Электромонтажные работы</a></li>
                     <li><a href="/contact/">Наши контакты</a></li>
@@ -28,18 +40,20 @@
             </nav>
         </div>
     </div>
-    {% block content %}{% endblock %}
 
-    <!--{% if home_page %}-->
-        <!--{% include 'home_page.html' %}-->
-    <!--{% elif service_page %}-->
-        <!--{% include 'service_page.html' %}-->
-    <!--{% elif electrical_work %}-->
-        <!--{% include 'electrical_work.html' %}-->
-    <!--{% else %}-->
-        <!--{% include 'contact_page.html' %}-->
-    <!--{% endif %}-->
+    <div id="content">
+    <!--{% block content %}{% endblock %}-->
 
+    {% if home_page %}
+        {% include 'home_page.html' %}
+    {% elif service_page %}
+        {% include 'service_page.html' %}
+    {% elif electrical_work %}
+        {% include 'electrical_work.html' %}
+    {% else %}
+        {% include 'contact_page.html' %}
+    {% endif %}
+    </div>
     <footer>
         <div id="footer">
             <div id="sitemap">

@@ -12,24 +12,32 @@ p {
 }
 
 #wrapper {
+	/*max-width: 960px;*/
+	max-width: 100%;
+	margin: auto;
+}
+
+#content {
 	max-width: 960px;
 	margin: auto;
 }
 
 header {
-	padding: 0 40px;
+	padding: 0 0px;
 	background: #314D5D;
 }
 
-#wrapper-head {
-    width="100%"
-}
-/*
-.headerstat {
-   top: 267px;
+.fixed{
    position: fixed;
-   z-index: 1000;
-}*/
+   top: 0px;
+}
+
+.headerstat {
+   /*margin-top: 0px;
+   position: fixed;
+   z-index: 1000;*/
+   background: #314D5D;
+}
 
 nav a {
 	text-decoration: none;
@@ -56,6 +64,7 @@ nav li {
 .top-menu li.active {
 	background: #29c5e6;
 	color: #fff;
+	font-weight: bold;
 }
 
 .top-menu a {

@@ -21,7 +21,7 @@ urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
     url(r'^$', main_page),
     url(r'^electrical_work/$', electrical_work),
-    url(r'^service/$', service_page),
+    url(r'^services/$', service_page),
     url(r'^contact/$', contact_page),
     # url(r'^$', 'mysite.views.hello'),
 ]

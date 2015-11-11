@@ -13,8 +13,8 @@ def service_page(request):
 
 def contact_page(request):
     now = datetime.datetime.now()
-    return render_to_response('index.html', {'contact_page': 'true'})
+    return render_to_response('index.html', {'contact': 'true'})
 
-def electrical_work(request):
+def electrical_page(request):
     now = datetime.datetime.now()
-    return render_to_response('index.html', {'electrical_work': 'true'})
+    return render_to_response('index.html', {'electrical_page': 'true'})

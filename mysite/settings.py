@@ -72,6 +72,12 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'mysite.wsgi.application'
 
+ADMINS = ('Sergei', 'Sergei_xxx2000@')
+
+EMAIL_HOST = 'localhost'
+EMAIL_HOST_PASSWORD = ''
+EMAIL_HOST_USER = ''
+EMAIL_PORT = '25'
 
 # Database
 # https://docs.djangoproject.com/en/1.8/ref/settings/#databases

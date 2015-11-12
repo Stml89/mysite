@@ -4,6 +4,7 @@
 <head lang="en">
     <meta http-equiv="Content-type" content="text/html; charset=utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <title>kip-minsk</title>
     <!--<title>{% block title %}{% endblock %}</title>-->
     <link rel="stylesheet" href="{% static 'css/styles.css' %}"/>
 	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Oswald:400,300" type="text/css">
@@ -11,6 +12,14 @@
 	<!--[if lt IE 9]>
 	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
+    <SCRIPT type="text/javascript">
+    $(function() {
+         var url=document.location.href;
+         $.each($('.nav a'),function(){
+         if(this.href==url){$(this).addClass('active');};
+         });
+    });
+</SCRIPT>
 </head>
 <body>
     <script type="text/javascript">
@@ -50,8 +59,10 @@
         {% include 'service_page.html' %}
     {% elif electrical_page %}
         {% include 'electrical_page.html' %}
-    {% else %}
+    {% elif contact%}
         {% include 'contact.html' %}
+    {% else %}
+        {% include 'Error_404' %}
     {% endif %}
     </div>
     <footer>

@@ -15,7 +15,9 @@ Including another URLconf
 """
 from django.conf.urls import include, url
 from django.contrib import admin
-from mysite.views import main_page, service_page, contact_page, electrical_page
+from mysite.views import main_page, service_page, contact_page, electrical_page#, Error_404
+
+# handler404 = 'mysite.views.Error_404'
 
 urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),

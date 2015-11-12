@@ -4,6 +4,9 @@ from django.shortcuts import render_to_response
 # from django.template.loader import get_template
 import datetime
 
+# def Error_404(request):
+#     return render_to_response('index.html', {'Error_404': 'true'})
+
 def main_page(request):
     return render_to_response('index.html', {'home_page': 'true'})
 

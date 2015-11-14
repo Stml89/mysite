@@ -25,18 +25,18 @@ p {
 header {
 	padding: 0 0px;
 	background: #314D5D;
-	header:
 }
 
-.fixed{
-   position: fixed;
-   top: 0px;
+.fixed {
+   /*position: fixed;*/
+   top: 281px;
+   margin-top: 0px;
 }
 
 .headerstat {
-   /*margin-top: 0px;
-   position: fixed;
-   z-index: 1000;*/
+   /*margin-top: 0px;*/
+   /*position: fixed;*/
+   z-index: 1000;
    background: #314D5D;
 }
 
@@ -135,10 +135,30 @@ footer {
 }
 
 #footer {
-	max-width: 960px;
+	max-width: 1000px;
 	margin: auto;
 	padding: 10px 0;
 	height: 90px;
+}
+
+footer h3 {
+	font: 14px 'Oswald', sans-serif;
+	color: #fff;
+	border-bottom: 1px solid #919191;
+	margin: 0 0 10px 0;
+}
+
+footer p {
+	margin: 5px 0;
+}
+
+#registration_info {
+	float: left;
+	width: 200px;
+}
+
+#registration_info p {
+	padding-right: 15px;
 }
 
 footer a {
@@ -146,10 +166,10 @@ footer a {
 }
 
 #sitemap {
-    <!--width: 150px;-->
+	width: 470px;
 	float: left;
 	margin-left: 20px;
-	padding-right: 15px;
+	padding-right: 65px;
 }
 
 #sitemap div {
@@ -157,7 +177,7 @@ footer a {
 }
 
 #sitemap div + div {
-	margin-left: 10px;
+	margin-left: 40px;
 }
 
 #sitemap a {
@@ -173,11 +193,11 @@ footer a {
 
 #footer-logo {
 	float: right;
-	margin-top: -40px;
+	margin-top: 20px;
 	font-size: 10px;
 	text-align: right;
 }
-
+/*
 aside > h2 {
 	background: #29c5e6;
 	font: 14px 'Oswald', sans-serif;
@@ -191,4 +211,4 @@ aside > p {
 	border: 1px solid #e7e7e7;
 	padding: 10px;
 	margin: 0;
-}
+}*/

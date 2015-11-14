@@ -12,27 +12,52 @@
 	<!--[if lt IE 9]>
 	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
-    <SCRIPT type="text/javascript">
-    $(function() {
-         var url=document.location.href;
-         $.each($('.nav a'),function(){
-         if(this.href==url){$(this).addClass('active');};
-         });
-    });
-</SCRIPT>
+    <!--<SCRIPT type="text/javascript">-->
+        <!--$(function() {-->
+             <!--var url=document.location.href;-->
+             <!--$.each($('.nav a'),function(){-->
+             <!--if(this.href==url){$(this).addClass('active');};-->
+             <!--});-->
+        <!--});-->
+    <!--</SCRIPT>-->
+    <!--<script type="text/javascript">-->
+        <!--jQuery(document).ready(function(){-->
+            <!--function getScrollTop() {-->
+                <!--var scrOfY = 0;-->
+                <!--if( typeof( window.pageYOffset ) == "number" ) {-->
+                    <!--scrOfY = window.pageYOffset;-->
+                <!--} else if( document.body && ( document.body.scrollLeft || document.body.scrollTop ) ) {-->
+                    <!--scrOfY = document.body.scrollTop;-->
+                <!--} else if( document.documentElement && ( document.documentElement.scrollLeft-->
+                    <!--|| document.documentElement.scrollTop ) ) {-->
+                        <!--scrOfY = document.documentElement.scrollTop;-->
+                <!--}-->
+                <!--return scrOfY;-->
+            <!--}-->
+            <!--jQuery(window).scroll(function() {-->
+                <!--fixPaneRefresh();-->
+            <!--});-->
+            <!--function fixPaneRefresh(){-->
+                <!--if (jQuery(".top-menu").length) {-->
+                    <!--var top  = getScrollTop();-->
+                    <!--if (top < 281) jQuery(".top-menu").css("margin-top",281-top+"px");-->
+                    <!--else jQuery(".top-menu").css("margin-top","0");-->
+                <!--}-->
+            <!--}-->
+        <!--});-->
+    <!--</script>-->
+    <script type="text/javascript">
+       $(window).bind('scroll', function() {
+           if ($(window).scrollTop() < 281) {
+              $('.headerstat').addClass('fixed');
+           }
+           else {
+              $('.headerstat').removeClass('fixed');
+           }
+       });
+    </script>
 </head>
 <body>
-    <script type="text/javascript">
-        $(window).bind('scroll', function() {
-           if ($(window).scrollTop() < 276) {
-              $('.top-menu').addClass('fixed');
-           }
-           else
-           {
-              $('.top-menu').removeClass('fixed');
-           }
-        });
-    </script>
     <div id="wrapper">
 		<header>
             <a href="/"><img src="{% static 'pic/banner.gif' %}" alt="kip-logo" width="100%"></a>
@@ -68,7 +93,7 @@
     <footer>
         <div id="footer">
             <div id="sitemap">
-                <h3>Карта сайта:</h3>
+            	<h3>Карта сайта</h3>
                 <div>
                     <a href="/">Главная страница</a>
                     <a href="/contact/">Наши контакты</a>
@@ -78,9 +103,14 @@
                     <a href="/services/">Обслуживание систем теплового учета и регулирования</a>
                 </div>
             </div>
+            <div id="registration_info">
+                <h3>Регистрационные данные</h3>
+                <p>УНП12345678901234567890</p>
+                <div>Выданный .. бла-бла-бла</div>
+            </div>
             <div id="footer-logo">
-                <a href="/"><img src="" alt="kip-minsk logo"></a>
-                <p>Copyright © 2015 kip-minsk.by</p>
+                <a href="/"><img src="{% static 'pic/123.png' %}" alt="kip-minsk logo"></a>
+                <p>Copyright © 2015 kip-minsk. A Stml creation</p>
             </div>
         </div>
     </footer>

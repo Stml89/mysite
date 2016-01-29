@@ -197,6 +197,15 @@ footer a {
 	font-size: 10px;
 	text-align: right;
 }
+
+.left-div {
+    float: left;
+    width: 460px;
+}
+
+.right-div {
+
+}
 /*
 aside > h2 {
 	background: #29c5e6;
